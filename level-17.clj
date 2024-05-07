@@ -5,7 +5,7 @@
                      :paragraph-2 "For example:"
                      :paragraph-3 "@(def db-before (d/as-of (d/db conn) 23364758362548))\n\n (d/q '[:find ?v \n        :in $ ?worker-id\n        :where [?e :worker/id ?worker-id]\n               [?e :worker/rating ?v]] db-before \"123-abc\")"
                      :paragraph-4 "The above query will return the value for :worker/rating at the point in time corresponding to the transaction ID 23364758362548."
-                     :paragraph-5 "Pull the all the data including the :account/owner for "
+                     :paragraph-5 "Pull all the data including the :account/owner for "
                      :paragraph-5.1 ":transfer/id #uuid \"59b9c791-74ce-4c51-a4bc-ef6d06bee2db\""
                      :paragraph-5.2 " as-of transaction ID "
                      :paragraph-5.3 "13194139533319"
